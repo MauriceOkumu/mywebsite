@@ -2,7 +2,7 @@
   "name": "mywebsite",
   "version": "1.0.0",
   "description": "My first website",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/MauriceOkumu/mywebsite/issues"
   },
-  "homepage": "https://github.com/MauriceOkumu/mywebsite#readme"
+  "homepage": "https://github.com/MauriceOkumu/mywebsite#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
