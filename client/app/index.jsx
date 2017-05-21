@@ -7,7 +7,7 @@ class App extends React.Component {
   }
   render() {
   	return (
-  	  <div>The website is under maintenance and will be back soon</div>	
+  	  <div>The website is under<strong> maintenance </strong>and will be back soon</div>	
   	)
   }
 }
