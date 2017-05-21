@@ -4,8 +4,12 @@
   "description": "My first website",
   "main": "server/index.js",
   "scripts": {
+    "start": "node server/index.js",
     "dev": "webpack -d --watch",
     "build": "webpack -p"
+  },
+  "engines": {
+    "node": "7.4.0"
   },
   "repository": {
     "type": "git",
