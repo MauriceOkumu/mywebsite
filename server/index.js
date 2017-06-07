@@ -3,7 +3,7 @@ var path = require('path');
 var morgan = require('morgan');
 var bodyparser = require('body-parser');
 
-var port = process.env.PORT;
+var port = process.env.PORT || 5000;
 
 var server = express();
 server.use(morgan('dev'));
