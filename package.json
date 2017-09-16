@@ -30,11 +30,13 @@
     "body-parser": "^1.17.2",
     "css-loader": "^0.28.2",
     "express": "^4.15.3",
+    "file-loader": "^0.11.2",
     "morgan": "^1.8.1",
     "path": "^0.12.7",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "style-loader": "^0.18.1",
+    "url-loader": "^0.5.9",
     "webpack": "^2.5.1",
     "webpack-combine-loaders": "^2.0.3"
   },
