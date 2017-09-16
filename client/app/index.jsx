@@ -7,13 +7,26 @@ import NavBarIn from './navbar.jsx';
 class App extends React.Component {
   constructor (props) {
   	super (props)
+    this.state = {
+      clicked : false,
+      innerText : false
+    }
+    this.handleClick = this.handleClick.bind(this);
   }
+  handleClick () {
+   this.setState({ 
+     clicked: !this.state.clicked,
+     innerText: !this.state.innerText
+   })
+  }
+ 
   render() {
   	return (
   	  <div>
       <NavBarIn />	
-  	  <div>The website is under<strong> good ol' maintenance </strong>and will be back soon</div>
-  	  <About />
+  	  <div id="about" onClick={this.handleClick}>{!this.state.innerText ? <a href="#">Click to Read more about me..</a> : <a href="#">Show less..</a>}
+         {this.state.clicked ? <About /> : null}
+      </div>
       <Picture />
   	  </div>	
   	)
