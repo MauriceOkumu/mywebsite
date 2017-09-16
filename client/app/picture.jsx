@@ -1,4 +1,5 @@
 import React from 'react';
+import Pic from './pics/IMG_3222.jpg'
 
 class Picture extends React.Component{
   constructor(props) {
@@ -6,7 +7,9 @@ class Picture extends React.Component{
   }	
   render() {
   	return (
-  	  <div></div>	
+  	  <div>
+  	  	<img src={Pic}/>
+  	  </div>	
   	)
   }
 }
