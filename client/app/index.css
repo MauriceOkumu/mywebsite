@@ -1,3 +1,14 @@
+.container{
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  box-shadow: 0px 2px 40px 0px rgba(0,0,0,0.08);
+  background-color: rgba(255, 255, 255, .98);
+  z-index: 9999;
+}
 .container a{
 	text-decoration: none;
+}
+.container strong{
+	color: red;
 }
