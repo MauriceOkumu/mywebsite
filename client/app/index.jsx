@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import  About from './about.jsx';
 import Picture from './picture.jsx';
 import NavBarIn from './navbar.jsx';
+import styles from './index.css';
 
 class App extends React.Component {
   constructor (props) {
@@ -22,9 +23,10 @@ class App extends React.Component {
  
   render() {
   	return (
-  	  <div>
+  	  <div >
       <NavBarIn />	
-  	  <div id="about" onClick={this.handleClick}>{!this.state.innerText ? <a href="#">Click to Read more about me..</a> : <a href="#">Show less..</a>}
+  	  <div className={styles.container} onClick={this.handleClick}>
+        {!this.state.innerText ? <a href="#">Click <strong>here</strong> to Read more about me..</a> : <a href="#">Show <strong>less</strong>..</a>}
          {this.state.clicked ? <About /> : null}
       </div>
       <Picture />
