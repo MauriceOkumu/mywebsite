@@ -21,7 +21,7 @@ var config = {
       },
       { 
         test: /\.(png|jpg)$/, 
-        loader: 'url-loader?limit=8192' 
+        loader: 'url-loader?limit=25000' 
       },
       {
         test: /\.css$/,
